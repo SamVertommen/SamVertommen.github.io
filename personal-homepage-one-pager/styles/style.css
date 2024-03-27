@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    background-image: url("../images/03EB9B26-0BD3-4835-995F-63CE7A39BE6D_1_201_a.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.title h1 {
+    color: white;
+    font-weight: bold;
+    margin: 0px 25px;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #c4d7ec;
+
+    a {
+        text-decoration: none;
+        color: #143c70;
+        margin: 50px;
+    }
+}
+
+.intro {
+    padding: 25px;
+    background-color: rgb(243, 243, 243);
+
+    p {
+        padding-left: 10px;
+    }
+}
+
+section {
+    padding: 25px;
+}
+
+section article {
+    padding: 10px;
+}
+
+
+.horizontal_container {
+    display: flex;
+    align-items: center;
+}
+
+.cards-list {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.cards-list li {
+    background-color: #e9e9e9;    
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cards-list li:hover{
+    background-color: #f7f7f7;
+}
+
+.cards-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    padding: 15px;
+    font-size: 12px;
+    background-color: #c4d7ec;
+
+    img {
+        border-radius: 50%;
+        height: 75px;
+        margin-right: 25px;
+    }
+
+}
