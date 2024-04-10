@@ -1,0 +1,32 @@
+.data {    
+    overflow: hidden;
+    border: 1px dotted black;
+}
+
+.data thead{
+    background:rgb(28, 30, 72);
+    color: rgb(200,190,240) ;
+}
+
+.data tbody {    
+    background: rgb(244, 244, 244);   
+    border-color: black;
+}
+
+.data tbody tr :first-child {
+    background:pink;
+}
+
+.data tbody tr :last-child {
+    background:pink;
+}
+
+.off-day{
+    background-color: rgb(250,120,120);
+}
+
+.other-month{
+    background-color: rgb(203, 203, 203);
+    color: darkgrey;
+}
+

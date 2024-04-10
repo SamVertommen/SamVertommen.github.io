@@ -1,0 +1,56 @@
+body {
+    max-width: 95%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body > div {    
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid green;
+    margin-bottom: 5px;
+
+}
+
+.container_flex {
+    display: flex;
+    border: 1px solid red;
+}
+
+.container_flex>* {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid blue;
+}
+
+.main {
+    width: 70%;
+}
+
+.side {
+    flex-grow: 1;
+}
+
+article {
+    margin: auto;
+}
+
+.container_inline {
+    width: auto;
+    border: 1px solid red;
+    text-align: justify; 
+}
+
+.container_inline>* {
+    display: inline-block;     
+    width: max-content;    
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid blue;
+    
+}

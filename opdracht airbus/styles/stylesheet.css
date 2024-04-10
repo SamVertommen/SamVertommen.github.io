@@ -1,0 +1,126 @@
+body{
+    background-image: url("../fotos/pagebackground.png");
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 960px;
+    margin:auto;
+}
+
+header{
+    position: relative;
+    height: 200px;
+    background-image: url("../fotos/bgsky3.jpg");
+    text-align: center;
+    color: darkblue;
+}
+
+header img{
+    position: absolute;    
+    width: 250px;    
+    right: 90px;
+    bottom: 60px;
+}
+
+header h1{
+    font-size: 300%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+header h2{
+    font-size: 240%;
+    font-weight: bold;
+}
+
+
+
+.center{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.news{   
+    width: 250px;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    color: #666666;
+    font-size: 90%;
+    align-self: flex-start;
+    
+}
+
+.news h3{
+    font-size: 120%;
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+
+.news p{
+    padding: 10px;
+}
+
+.main{
+    width: 700px;
+    background-color: white;
+}
+
+.introduction{
+    display: flex;    
+}
+
+.introduction p{
+    margin: 20px 30px 20px 0px;
+}
+
+.introduction span{
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.logo{
+    margin: 20px;
+}
+
+.gallery{
+    background-color: #999999;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.foto{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    padding: 10px;
+    border: 1px dashed #999999;  
+}
+
+.bottom{
+    display: flex;
+    background-color: #666666;
+    color:white;
+    line-height: 2em;
+
+}
+
+.bottom article{
+    padding-left: 120px;
+    a{
+        color:inherit;
+    }
+    a:hover{
+        color: red;
+    }
+}
+
+footer{
+    text-align: center;
+}
