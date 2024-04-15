@@ -36,11 +36,9 @@ header a:hover {
 main h1 {
     font-size: 300%;
     margin-top: 10px;
-    /* font-weight: normal; */
 }
 
-main h2 {
-    /* font-weight: bold; */
+main h2 {    
     font-size: 21px;
 }
 
