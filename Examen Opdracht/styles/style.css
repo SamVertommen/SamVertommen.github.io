@@ -18,28 +18,25 @@ header img {
 
 header nav a {
     float: right;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
+    padding: 10px 0px 0px 20px;
     color: #32bea6;
     font-weight: bold;
 }
 
 header a:hover {
     color: #e0878d;
+    text-decoration: none;
 }
 
-.poster_container img {
+.poster {
     width: 100%;
     height: auto;
 }
 
 main h1 {
     font-size: 300%;
-    width: 100%;
-    margin: 0px;
     margin-top: 10px;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 main h2 {
@@ -47,16 +44,16 @@ main h2 {
     font-size: 21px;
 }
 
-main p {
-    padding-bottom: 20px;
-}
-
-.container-fluid{
-    padding: 0px;
+.container-fluid {    
+    padding: 0px 15px;
 }
 
 .general_info article {
     padding-right: 15px;
+}
+
+.extra_info{
+    margin-top: 20px;
 }
 
 /* table */
@@ -75,6 +72,7 @@ table col:first-child {
 table th {
     border-bottom: 3px solid black;
     background-color: white;
+    text-align: center;
 }
 
 table tr:nth-child(odd) {
@@ -111,8 +109,9 @@ span.small {
 
 /* Interesses */
 
-.carousel{
-    margin-top:25px;
+.carousel {
+    margin-top: 25px;
+    padding: 0px 15px;
 }
 
 .carousel h2 {
@@ -121,13 +120,18 @@ span.small {
 
 .carousel .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 10px;
 }
 
 .grid img {
     max-width: 100%;
 }
+
+.grid img:nth-last-child(1),
+    img:nth-last-child(2) {
+        display: none;
+    }
 
 /* footer */
 
@@ -150,18 +154,26 @@ footer li:first-child {
     font-style: italic;
 }
 
-@media screen and (max-width: 990px) {
+/* adjustsments for large screens */
 
-    .container-fluid, .carousel{
-        padding:15px;
+@media screen and (min-width: 990px) {
+
+    .extra_info{
+        margin-top: 0px;
     }
 
-    .grid {
-        grid-template-columns: auto auto auto;
+    .container-fluid,
+    .carousel {
+        padding: 0px;
+    }
+
+    .carousel .grid {
+        grid-template-columns: auto auto auto auto auto;
+        
     }
 
     .grid img:nth-last-child(1),
     img:nth-last-child(2) {
-        display: none;
+        display:grid;
     }
 }
